@@ -1,14 +1,76 @@
-.navigation{
-    width: 100%;
-    display:flex;
-    background-color: antiquewhite;
+body{
+    background-image: url(https://www.cmcc.it/wp-content/uploads/2019/12/Mountains.jpg);
+    background-size:cover;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color:white ;
+    width:fit-content;
+    position: fixed;
+    top:35px;
+    left: 34%;
+    z-index: 1000;
 }
 
-.navigation h1{
-    font-size: 1rem;
+.left {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-a{
+.right a {
+    margin-left: 20px;
     text-decoration: none;
-    color: black;
+    color: #333;
+}
+
+.right a:hover {
+    color: #007BFF;
+}
+
+#Discover{
+    font-family: "Montserrat", sans-serif;
+}
+
+#Experience{
+    font-family: "Poppins", sans-serif;
+}
+
+#Explore{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Body{
+    margin-top: 20%;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.info{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.488);
+    top: 60px;
+}
+
+.info1 img{
+    float: left;
+    border: 10px solid white;
+}
+
+.info1 p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.info2 img{
+    float:right;
+    border: 10px solid white;
+}
+
+.info2 p{
+    font-size: 30px;
+    font-weight: bold;
 }

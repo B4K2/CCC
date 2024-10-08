@@ -1,6 +1,7 @@
 body{
     background-image: url(https://www.cmcc.it/wp-content/uploads/2019/12/Mountains.jpg);
     background-size:cover;
+    background-repeat: no-repeat;
 }
 .navbar {
     display: flex;
@@ -13,6 +14,7 @@ body{
     top:35px;
     left: 34%;
     z-index: 1000;
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .left {
@@ -23,6 +25,7 @@ body{
 .right a {
     margin-left: 20px;
     text-decoration: none;
+    font-weight: bold;
     color: #333;
 }
 
@@ -52,7 +55,11 @@ body{
 .info{
     position: relative;
     background-color: rgba(255, 255, 255, 0.488);
-    top: 60px;
+    top: 700px;
+}
+
+.info1{
+    display: flex;
 }
 
 .info1 img{
@@ -66,11 +73,29 @@ body{
 }
 
 .info2 img{
-    float:right;
+    float: left;
     border: 10px solid white;
 }
 
 .info2 p{
     font-size: 30px;
     font-weight: bold;
+}
+
+.button{
+    position: relative;
+    top: 50px;
+    display: inline-block;
+    justify-content: center;
+    width: 150px;
+    text-decoration: none;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+}
+.button:hover{
+    color: white;
+    background-color: black;
 }

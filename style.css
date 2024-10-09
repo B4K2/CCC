@@ -7,6 +7,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-x: hidden;
+    margin: 0;
 }
 .navbar {
     display: flex;
@@ -88,6 +89,8 @@ body{
 
 .Destinations{
     position: relative;
+    display: flex;
+    flex-direction: column;
     background-color: white;
     scroll-margin-top: 150px;
     width: 100%;
@@ -97,7 +100,10 @@ body{
 .Destinations h2{
     text-decoration: underline;
     text-underline-offset: 15px;
+    justify-content: center;
+
 }
+
 
 @keyframes appear{
     from{
@@ -109,7 +115,7 @@ body{
     }
 }
 
-.Destinations img{
+.Destinations1 img{
     animation: appear linear;
     animation-timeline: view();
     animation-range: 0 cover 40%;
@@ -119,9 +125,50 @@ body{
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: #007BFF;
-    color: white;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/615/375/original/vector-up-arrow-icon.jpg);
+    background-size: cover;
     padding: 10px 20px;
     border-radius: 5px;
     z-index: 5;
+}
+
+
+.Destinations > .Destinations1 > a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 5%;
+    transition: 500ms;
+    transform: 500ms ease-in-out;
+}
+
+.Destinations > .Destinations1 > a:hover{
+    color: white;
+    background-color:black;
+    transform: scale(1.1);
+}
+
+.Destinations > .Destinations2 > a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10%;
+    transition: 500ms;
+    transform: 500ms ease-in-out;
+}
+
+.Destinations2 > img{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: 0 cover 40%;
+}
+
+.Destinations > .Destinations2 > a:hover{
+    color: white;
+    background-color:black;
+    transform: scale(1.1);
 }

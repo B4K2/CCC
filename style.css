@@ -12,7 +12,8 @@ body{
     width:fit-content;
     position: fixed;
     top:35px;
-    left: 34%;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1000;
     box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.2);
 }

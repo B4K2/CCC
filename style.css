@@ -1,22 +1,30 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-image: url(https://www.cmcc.it/wp-content/uploads/2019/12/Mountains.jpg);
     background-size:cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background-color:white ;
+    background-color: white ;
     width:fit-content;
     position: fixed;
+    border: 0px solid;
+    border-radius: 10px;
     top:35px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
     box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 
 .left {
     font-size: 24px;
@@ -54,35 +62,6 @@ body{
     font-size: 2.5rem;
 }
 
-.info{
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.488);
-    top: 700px;
-}
-
-.info1{
-    display: flex;
-}
-
-.info1 img{
-    float: left;
-    border: 10px solid white;
-}
-
-.info1 p{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.info2 img{
-    float: left;
-    border: 10px solid white;
-}
-
-.info2 p{
-    font-size: 30px;
-    font-weight: bold;
-}
 
 .button{
     position: relative;
@@ -105,4 +84,44 @@ body{
     color: white;
     background-color: black;
     transform: scale(1.1) 
+}
+
+.Destinations{
+    position: relative;
+    background-color: white;
+    scroll-margin-top: 150px;
+    width: 100%;
+    top: 400px;
+}
+
+.Destinations h2{
+    text-decoration: underline;
+    text-underline-offset: 15px;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0.5;
+        scale: 0.5;
+    }to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.Destinations img{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: 0 cover 40%;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 5;
 }

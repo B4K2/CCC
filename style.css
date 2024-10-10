@@ -9,6 +9,9 @@ body{
     overflow-x: hidden;
     margin: 0;
 }
+body > img{
+    mix-blend-mode: darken;
+}
 .navbar {
     display: flex;
     justify-content: center;
@@ -89,7 +92,9 @@ body{
 
 .Destinations{
     position: relative;
-    display: inline-block;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
     background-color: white;
     scroll-margin-top: 150px;
     width: 100%;
@@ -99,8 +104,7 @@ body{
 .Destinations h2{
     text-decoration: underline;
     text-underline-offset: 15px;
-    justify-content: center;
-
+    text-align: center;
 }
 
 
@@ -121,12 +125,12 @@ body{
     float: left;
 }
 
+
 .back-to-top {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-image: url(https://static.vecteezy.com/system/resources/previews/000/615/375/original/vector-up-arrow-icon.jpg);
-    background-size: cover;
+    mix-blend-mode:multiply;
     padding: 10px 20px;
     border-radius: 5px;
     z-index: 5;
@@ -135,7 +139,6 @@ body{
 
 .Destinations > .Destinations1 > a{
     position: relative;
-    left: 25%;
     text-decoration: none;
     color: black;
     background-color: aliceblue;
@@ -154,7 +157,6 @@ body{
 .Destinations > .Destinations2 > a{
     position: relative;
     text-decoration: none;
-    right: 25%;
     color: black;
     background-color: aliceblue;
     padding: 10px;
@@ -168,6 +170,7 @@ body{
     animation-timeline: view();
     animation-range: 0 cover 40%;
     float: right;
+    
 }
 
 .Destinations > .Destinations2 > a:hover{
@@ -176,16 +179,11 @@ body{
     transform: scale(1.1);
 }
 
-#service h1{
-    position: absolute;
-    top: 1000px;
-    color: black;
-}
+.services-section{
+    position: relative;
+    top: 345px;
 
-#Services{
-    position:relative;
-    top: 500px;
-    float: left;
-    background-image: url(https://th.bing.com/th/id/R.6666140560649b0ab8253b1ca69600e6?rik=cqnz0SmzQC%2fpIw&riu=http%3a%2f%2fwww.wallpaperup.com%2fuploads%2fwallpapers%2f2015%2f04%2f02%2f652690%2f6666140560649b0ab8253b1ca69600e6.jpg&ehk=v0Z2kr4G1s7OfyHmCvlUrl%2f2WWtw76b0lpuDlIY3mYg%3d&risl=&pid=ImgRaw&r=0);
-
+    background-image: url(https://wallpapers.com/images/hd/beautiful-ocean-pictures-1920-x-1080-8f7y2fo9yqmym5ch.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }

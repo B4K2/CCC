@@ -17,7 +17,8 @@ body > img{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background-color: white ;
+    background-color: rgba(255, 255, 255,0.35) ;
+    backdrop-filter: blur(15px);
     width:max-content;
     position: fixed;
     border: 0px solid;
@@ -33,6 +34,9 @@ body > img{
 .left {
     font-size: 24px;
     font-weight: bold;
+    font-family: Poppins, sans-serif;
+    color: aliceblue;
+    text-shadow: 2px 2px #000;
 }
 
 .right a {
@@ -41,22 +45,36 @@ body > img{
     font-weight: bold;
     color: #333;
     transition: 500ms;
+    font-family: Poppins, sans-serif;
 }
 
 .right a:hover {
     color: #007BFF;
 }
 
+.Body > h1{
+    font-family: "Montserrat", sans-serif;
+    color: cyan;
+    text-shadow: 
+    6px 6px #000,
+    6px 6px #000,
+    6px 6px #000,
+    6px 6px #000;
+}
+
 #Discover{
     font-family: "Montserrat", sans-serif;
+    color: cyan;
 }
 
 #Experience{
     font-family: "Poppins", sans-serif;
+    color: cyan;
 }
 
 #Explore{
     font-family: 'Courier New', Courier, monospace;
+    color:cyan;
 }
 
 .Body{

@@ -51,7 +51,7 @@ body{
 
 .Body > h1{
     font-family: "Montserrat", sans-serif;
-    color: gray;
+    color: cyan;
     text-shadow: 
     6px 6px #000,
     6px 6px #000,
@@ -66,12 +66,12 @@ body{
 
 #Experience{
     font-family: "Poppins", sans-serif;
-    color: skyblue;
+    color: cyan;
 }
 
 #Explore{
     font-family: 'Courier New', Courier, monospace;
-    color:aquamarine;
+    color:cyan;
 }
 
 .Body{
@@ -143,10 +143,7 @@ body{
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-image: url(https://static.vecteezy.com/system/resources/previews/000/615/375/original/vector-up-arrow-icon.jpg);
-    background-size: cover;
-    padding: 10px 20px;
-    border-radius: 5px;
+    mix-blend-mode: darken;
     z-index: 5;
 }
 
@@ -202,8 +199,25 @@ body{
 
 #Services{
     position:relative;
-    top: 500px;
-    float: left;
+    top: 400px;
+    display:inline-block;
+    width: 100%;
     background-image: url(https://th.bing.com/th/id/R.6666140560649b0ab8253b1ca69600e6?rik=cqnz0SmzQC%2fpIw&riu=http%3a%2f%2fwww.wallpaperup.com%2fuploads%2fwallpapers%2f2015%2f04%2f02%2f652690%2f6666140560649b0ab8253b1ca69600e6.jpg&ehk=v0Z2kr4G1s7OfyHmCvlUrl%2f2WWtw76b0lpuDlIY3mYg%3d&risl=&pid=ImgRaw&r=0);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    margin: 0;
+}
 
+#Services > h1{
+    color: white;
+    text-align: center;
+}
+
+#Services h2{
+    position:fixed;
+    top: 500px;
+    color: white;
+    text-align: center;
 }

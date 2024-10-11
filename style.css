@@ -390,3 +390,11 @@ p {
         height: auto;
     }
 }
+
+.about img{
+    transition: 500ms;
+}
+
+.about img:hover{
+    transform: scale(1.2);
+}

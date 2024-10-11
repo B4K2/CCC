@@ -12,6 +12,13 @@ body{
 body > img{
     mix-blend-mode: darken;
 }
+
+p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 .navbar {
     display: flex;
     justify-content: center;
@@ -241,4 +248,146 @@ body > img{
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 400px;
+}
+
+.heading-about {
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-weight: 600;
+    font-style: normal;
+    text-shadow: 
+    6px 6px #000,
+    6px 6px #000,
+    6px 6px #000,
+    6px 6px #000;
+  }
+
+.heading{
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-weight: 600;
+    font-style: normal;
+    text-shadow: 
+    6px 6px #000,
+    6px 6px #000,
+    6px 6px #000,
+    6px 6px #000;
+}
+
+.about p{
+    padding: 50px 100px;
+    font-family: "Lato", sans-serif;
+    color: #333;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    body > img{
+        display: none;
+    }
+    .navbar {
+        flex-direction: column;
+        padding: 5px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .Body {
+        font-size: 2rem;
+        margin-top: 15%;
+        padding: 20px;
+    }
+
+    .heading-about, .heading {
+        height: 300px;
+    }
+
+    .about p {
+        padding: 30px;
+    }
+
+    .button {
+        width: 130px;
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+    
+    .Destinations {
+        top: 300px;
+        padding: 20px;
+    }
+
+    .Destinations h2 {
+        font-size: 24px;
+    }
+    
+    .Destinations > .Destinations1 img, .Destinations2 > img {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+
+    .Services-title {
+        grid-template-columns: 1fr;
+    }
+
+    .Services-title img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    body > img{
+        display: none;
+    }
+    .navbar {
+        flex-direction: column;
+        padding: 5px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .Body {
+        font-size: 1.5rem;
+        margin-top: 10%;
+        padding: 15px;
+    }
+
+    .heading-about, .heading {
+        height: 250px;
+    }
+
+    .about p {
+        padding: 20px;
+        font-size: 0.9rem;
+    }
+
+    .button {
+        width: 100px;
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .Destinations {
+        top: 250px;
+    }
+
+    .Destinations h2 {
+        font-size: 20px;
+    }
+
+    .Services-title {
+        grid-template-columns: 1fr;
+    }
+
+    .Services-title img {
+        width: 100%;
+        height: auto;
+    }
 }

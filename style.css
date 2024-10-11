@@ -339,7 +339,6 @@ p {
     }
 }
 
-/* Mobile (480px and below) */
 @media (max-width: 480px) {
     body > img{
         display: none;

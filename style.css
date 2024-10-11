@@ -124,6 +124,7 @@ body > img{
     text-align: center;
 }
 
+
 @keyframes appear{
     from{
         opacity: 0.5;
@@ -138,9 +139,9 @@ body > img{
     animation: appear linear;
     animation-timeline: view();
     animation-range: 0 cover 40%;
-    flex: 1 50%;
     float: left;
 }
+
 
 .back-to-top {
     position: fixed;
@@ -151,6 +152,7 @@ body > img{
     border-radius: 5px;
     z-index: 5;
 }
+
 
 .Destinations > .Destinations1 > a{
     position: relative;
@@ -179,14 +181,15 @@ body > img{
     border-radius: 10%;
     transition: 500ms;
     transform: 500ms ease-in-out;
-    float: none;
+    clear: both;
 }
 
 .Destinations2 > img{
     animation: appear linear;
     animation-timeline: view();
     animation-range: 0 cover 40%;
-    float: right; 
+    float: right;
+    
 }
 
 .Destinations > .Destinations2 > a:hover{
@@ -194,51 +197,75 @@ body > img{
     background-color:black;
     transform: scale(1.1);
 }
-.heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-image: url(https://media.istockphoto.com/id/451543103/photo/close-up-volcano-eruption.jpg?s=612x612&w=0&k=20&c=Tsuub8C7IOuxNg2ec6gbXwaL8H91YcWaMCWqYhdee0I=);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 400px;
-}
 
-.Services-title img{
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: 0 cover 20%;
-    transition: 500ms;
-}
-
-.Services-title img:hover{
-    transform: scale(1.1);
-}
-
-.acc img{
-    height: 43%;
-}
-
-.trans img{
-    height: 46%;
-}
-
-.Services-title{
+.services-section{
     position: relative;
-    display: grid;   
-    grid-template-columns: 1fr 1fr; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    top: 600px;
+    background-color: white;
 }
 
-.heading-about{
-    display: flex;
+.service-heading{
+    position: relative;
+    top: 50000px;
+    color: #000;
+    text-align: center;
     justify-content: center;
-    align-items: center;
-    color: white;
-    background-image: url(https://images.stockcake.com/public/a/5/5/a5580f5d-deea-4663-88bc-088ad72c2e77_large/sunlit-ocean-waves-stockcake.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
+    background-image: url(https://wallpapers.com/images/hd/beautiful-ocean-pictures-1920-x-1080-8f7y2fo9yqmym5ch.jpg);
+    background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        top: 10px;
+        left: 0;
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px;
+        transform: none;
+    }
+
+    .Destinations{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .left {
+        font-size: 18px;
+    }
+
+    .right a {
+        font-size: 14px;
+    }
+
+    .Body {
+        margin-top: 50%;
+        font-size: 1.5rem;
+    }
+
+    .button {
+        width: 100px;
+        padding: 10px;
+    }
+
+    .Destinations {
+        top: 100px;
+    }
+
+    .Destinations1 img, .Destinations2 img {
+        float: none;
+        width: 100%;
+    }
+
+    .Destinations1 a, .Destinations2 a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .services-section {
+        top: 300px;
+        background-attachment: scroll;
+    }
 }
